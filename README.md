@@ -1,17 +1,19 @@
+# ChatBot12 구현 프로젝트
+참고 링크 : https://www.notion.so/ollpp/40379810322b4f7db6de05afd367727e
 
-# ChatBot12
-Chatbot for senior
+<br><br>
 
-
-# 1. 프로젝트 개요
+## 👀 배경
     
-    시니어들을 위한 데이트앱에서 공통 관심사에서 원활한 대화를 위해 AI가 맞춤형 대화 스크립트를 생성 및 추천해주는 챗봇 시스템
+후케어스코리아의 시니어층을 겨냥한 데이팅앱을 출시하려고 합니다.
+
+젊은 고객을 겨냥한 다른 데이팅앱의 대부분은 채팅을 통해 서로에 대한 공통점을 찾고 인연을 만들 수 있습니다. 하지만 상대적으로 채팅에 대한 진입장벽이 높은 시니어층에게 해당 데이팅앱은 해결해야할 보완점입니다.
     
+<br><br>
 
+## 💡 모델
 
-# 2. 모델
-
-### 데이터셋
+### 📈 데이터셋
 1. Open Source 챗봇 데이터셋
     [https://github.com/songys/Chatbot_data]
 
@@ -20,9 +22,9 @@ Chatbot for senior
 
 3. 웰니스 데이터셋
     [https://github.com/nawnoes/WellnessConversation-LanguageModel]
+<br><br>
 
-
-### 모델 Architecture
+### 📋 모델 Architecture
 1. Define Token
     *  Q_TKN, A_TKN, BOS, EOS, PAD, MASK, SENT, PAD
 
@@ -50,9 +52,9 @@ Chatbot for senior
         4. criterion : CrossEntropyLoss(다중분류함수)
         5. optimizer : Adam
 
+<br><br>
 
-
-# 3. 서비스 설명
+## 📕 서비스 설명
 
 ### 디렉토리 구조
 1. model : 모델 피클화 해서 저장하는 경로
@@ -60,4 +62,4 @@ Chatbot for senior
 3. `main.py` : 가장 최신 pkl 모델 불러와서 스크립트 추천 목록 생성 파일
 4. `kogpt2_model.py` : 가장 최신 데이터(csv) 불러와서 모델 학습 후 pkl 파일로 생성
 5. `batch.py` : kogpt2_model.py 실행 및 model 폴더와 data 폴더 관리
-6. `gpt2_modeling.ipynb` :
+6. `gpt2_modeling.ipynb` : 모델 학습 파일
