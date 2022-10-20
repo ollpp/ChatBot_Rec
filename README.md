@@ -1,5 +1,5 @@
 # ChatBot12 구현 프로젝트
-참고 링크 : https://www.notion.so/ollpp/40379810322b4f7db6de05afd367727e
+참고 링크(notion 포트폴리오) : https://www.notion.so/ollpp/40379810322b4f7db6de05afd367727e
 
 <br><br>
 
